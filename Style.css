@@ -1,0 +1,306 @@
+/*---Style for all HTML pages---*/
+html{
+    background-color: black;
+  }
+ 
+  /*---Style for all HTML body pages---*/
+  html body{
+    height: 100%;
+  }
+  *{
+    font-family:Arial, Helvetica, sans-serif;
+    border: border-box;
+  } 
+  /*---Logo for each page---*/
+.Logo{
+  width: 35vw;
+  height: 190px;
+  background-position: top center;
+  text-decoration:none;
+}
+/*--Video for home page--*/
+video {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+body {
+  min-height: 100vh;
+  position: relative;
+  margin: 5;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+p{ 
+  color: white;
+  padding: 10;
+  margin: 50px 40px;
+  text-align:left;
+  font-size: 16px;
+}
+  h1{
+      color: white;
+      padding: 8px;
+      font-size: 18px;
+  }
+  .header{
+    width: 100vw;
+    background-color:darkslateblue;
+    height: 40px;
+    color:white;
+  }
+  /*---right hand side of nav bar---*/
+  .topnav {
+    background-color: darkslateblue;
+    overflow: hidden;
+  }
+  /*---Style the links inside the navigation bar---*/
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  /*---Change the color of links on hover---*/
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  /*---Add an active class to highlight the current page---*/
+  .topnav a.active {
+    border-bottom: 5px solid blue;
+    color: white;
+  }
+  /*---Hide the link that should open and close the topnav on small screens---*/
+  .topnav .icon {
+    display: none;
+  }
+/*---footer style for all pages---*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw; 
+    height: 90px;
+    background-color: darkslateblue;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  /*---div style within the footer---*/
+  footer div{
+    width: 33.33vw;
+    padding-bottom: 10px;
+  }
+
+/*---style h5 element within the footer---*/
+  footer div h5{
+   margin-top: 10px;
+   text-align: center;
+   text-transform: uppercase;
+   color: white;
+   text-align: left;
+  }
+
+/*---footer style to the left side of footer---*/
+ footer div:first-child{
+   padding-left: 45px;
+ }
+
+ /*---footer style for middle of footer---*/
+ footer div:nth-child(2){
+   padding-left: 45px;
+ }
+
+ /*---footer style for right side of footer---*/
+ footer div:last-child{
+  padding-left: 45px;
+ }
+
+/*---setting colour for header in footer---*/
+ footer div address{
+   display: block;
+   color: white;
+   margin-top: 15px;
+ }
+ 
+ /*---styling icone and info in footer---*/
+footer div address a {
+  display: block;
+  color: lightgray;
+  margin-bottom: 1px;
+  text-align: left;
+}
+
+/*---styling icons inside the footer---*/
+footer div address a i.footerIcon{
+  font-size: 14px;
+  color:lightgray;
+  vertical-align: middle;
+}
+
+/*---When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home")---*/
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+/*---The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
+This class makes the topnav display the links vertically instead of horizontally---*/
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+   /*---making the footer responsive---*/
+ footer div:last-child{
+  display: none;
+}
+footer div:first-child{
+  width: 50vw;
+  padding-left: 15px;
+}
+footer div:nth-child(2){
+  width: 50vw;
+}
+}
+
+/*---footer container---*/
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+/*---Styling div container within the footer---*/
+.flex-container > div {
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+/*--Home page information--*/
+.Index{
+color: white;
+font-size: 16px;
+}
+/*--Contact us page information--*/
+.Contact{
+    color: white;
+    font-size: 16px;
+    }
+/*--About us page information--*/
+.About{
+    color: white;
+    font-size: 16px;
+    }
+/*--Services page information--*/
+.Services{
+    color: white;
+    font-size: 16px;
+    }
+    /*---grid for services page---*/
+ *{
+     color: white;
+    box-sizing: border-box;
+  }
+ 
+  .col-3{
+    font-size: 16px;  
+    text-align: center;
+    width: 33.33%;
+    float: left;
+    padding: 5px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /*---to make service page responsive when on mobile device---*/
+ @media screen and (max-width: 600px) {
+   .col-3 {
+     display: block;
+     width: 100%;
+   }
+ }
+   /*---All forms---*/
+   .container{
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding:20px;
+    box-sizing: border-box;
+    }
+   form{
+     padding: 16px;
+}
+  .row{
+       
+     display: table;
+      width: 100%;
+    }
+    .row:after{
+        content:"";
+        clear: both;
+    }
+    .col-25{
+        width:25%;
+        float: left;
+        margin-top: 3px;
+    }
+    .col-75{
+        width: 70%;
+        float: left;
+        margin-top: 3px;
+
+    }
+   
+    input[type=text],input[type=email],input[type=message]{
+        width: 100%;
+        padding: 8px; 
+        border: 1px solid #5f5f5f;
+        border-radius: 4px;
+        color: black;
+    }
+     /***Style for submit and cancel buttons on forms***/
+    .cancelButton{
+        float: left;
+        width: 50%;
+        margin-top: 3px;
+    }
+    .submitButton{
+        float: left;
+        width: 50%;
+        margin-top: 3px;
+    }
+    input[type=submit] {
+        background-color:darkslateblue;
+        text-transform: uppercase;
+        padding: 10px;
+        border: none;
+       font-size: 16px;
+    
+      }
+      input[type=reset] {
+        background-color: darkgray;
+        text-transform: uppercase;
+        padding: 10px;
+        border: none;
+        font-size: 16px;
+      }
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
