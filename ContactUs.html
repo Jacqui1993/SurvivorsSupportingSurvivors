@@ -30,8 +30,8 @@
 
           <h1>Contact us page</h1>
  <!--Contact us Form-->
-
-  <!--Row for name
+  <form id="contact" action="contact.php" method="post">
+  <!--Row for name-->
   <div class="row">
      <div class="col-25">
   <label for="firstname">Name</label>
@@ -40,7 +40,7 @@
          <input type="text" name="name" id="name" required>
   </div>
   </div>
-  Row for email address
+  <!--Row for email address-->
       <div class="row">
       <div class="col-25">
   <label for="email">Email</label>
@@ -50,7 +50,7 @@
       <input type="text" name="email" id="email" required>
   </div>
   </div>
-  row for inputting message
+  <!--row for inputting message-->
       <div class="row">
       <div class="col-25">
           <label for="message">Message</label>
@@ -60,7 +60,7 @@
       <input type="text" name="message" id="message" required>
       </div>
   </div>
-  row to hold the submit and cancel buttons
+  <!--row to hold the submit and cancel buttons-->
       <div class="row">
       <div clas="col-25">
       </div>
@@ -73,13 +73,7 @@
           <div class="submitButton">
               <input type="submit" value="Submit">
           </div>
-      </div>-->
-      <form id="contact" action="ContactForm.php" method="post">
-          <input type="text" name="name" placeholder="Full name">
-          <input type="text" name="mail" placeholder="Your e-mail">
-          <input type="text" name="subject" placeholder="Subject">
-          <textarea name="message" placeholder="Message"></textarea>
-          <button type="submit" name="submit">Send Message</button>
+      </div>
   </form>
 
           <p> There are so many ways to support our mission. Contact us to find out more about volunteer opportunities,
