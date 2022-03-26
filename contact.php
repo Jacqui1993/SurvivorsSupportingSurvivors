@@ -59,8 +59,8 @@ $headers = 'From: '.$email_from."\r\n".
  
 @mail($email_to, $email_subject, $email_message, $headers);  
  
-header('Location: ContactUs.html');
-echo('Thank you for your feedback!');
+echo "Form successfully sent";
+$link_address = "Index.html";
  
 }
  
