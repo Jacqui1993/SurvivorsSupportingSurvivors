@@ -59,9 +59,8 @@ $headers = 'From: '.$email_from."\r\n".
  
 @mail($email_to, $email_subject, $email_message, $headers);  
  
-?>
-<h1>Thank you for your message!</h1> <h2>We will contact you as soon as possible.</h2>
-<?php
+header('Location: ContactUs.html');
+echo('Thank you for your feedback!');
  
 }
  
